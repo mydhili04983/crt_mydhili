@@ -1,0 +1,54 @@
+.clock-container {
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    margin-top: 20px; /* Optional margin */
+}
+
+.clock {
+    background-image: url("cc.png");
+    height: 80dvh;
+    width: 81vh;
+    background-size: 100%;
+    position: relative; /* Needed for absolute positioning of clock hands */
+}
+
+#hours, #minutes, #seconds {
+    position: absolute;
+    background-color: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hours {
+    border: 5px solid rgba(30, 3, 3, 0);
+    width: 1px;
+    height: 130px;
+    margin-top: 162px;
+    margin-left: 292px;
+    opacity: 1;
+}
+
+#minutes {
+    border: 5px solid rgb(25, 118, 40);
+    width: 1px;
+    height: 160px;
+    margin-top: 132px;
+    margin-left: 291.9px;
+    opacity: 1;
+}
+
+#seconds {
+    border: 5px solid gray;
+    width: 1px;
+    height: 180px;
+    margin-top: 112px;
+    margin-left: 292px;
+    opacity: 1;
+    transform-origin: bottom;
+}
+
+#digitalClock {
+    color: rgb(243, 44, 14); /* Change this to your preferred color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional shadow for better visibility */
+}
